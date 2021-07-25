@@ -31,7 +31,7 @@ $ sudo apt-get install conky-all
 монтаж
 
 Загрузите или клонируйте xtrose Conky с GitHub:
-$ git clone https://github.com/xtrose/conky
+$ git clone https://github.com/xtrose/conky.git
 
 Переместите каталог .conky в свой домашний каталог
 

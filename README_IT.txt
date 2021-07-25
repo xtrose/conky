@@ -31,7 +31,7 @@ $ sudo apt-get install conky-all
 installazione
 
 Scarica o clona Xtrose Conky da GitHub:
-$ git clone https://github.com/xtrose/conky
+$ git clone https://github.com/xtrose/conky.git
 
 Sposta la directory .conky nella tua home directory
 
