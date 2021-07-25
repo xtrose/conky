@@ -1,0 +1,44 @@
+conky.config = {
+
+-- Windows Settings
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = false,
+	own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 0,
+	double_buffer = true,
+	background = true,
+
+-- Position
+	alignment = 'bottom_right',
+	minimum_width = 480, 
+	minimum_height = 200,
+	gap_x = 90,
+	gap_y = 0,
+
+-- Font
+	use_xft = true,
+	xftalpha = 0,
+	override_utf8_locale = true,
+
+	draw_borders = false,
+	draw_outline = false,
+	draw_shades = false,
+
+-- Color
+	default_color = 'EFEFEF',
+	color0 = '89ab8a',
+	color1 = 'DDDDDD',
+	color2 = 'AAAAAA',
+	color3 = '888888',
+
+-- Other
+	update_interval = 3600,
+	
+};
+
+conky.text = [[
+${font}${offset 30}${voffset -10}${color0}${font Noto Sans:pixelsize=56}${time %d} ${color}${font Noto Sans:pixelsize=56}${time  %B} ${time %Y}
+${font}${offset 30}${voffset -50}${font Noto Sans:pixelsize=72}${time %A}${font}
+]];

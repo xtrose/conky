@@ -1,0 +1,56 @@
+conky.config = {
+
+-- Windows Settings
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 255,
+	double_buffer = true,
+	background = true,
+
+-- Position
+	alignment = 'top_right',
+	minimum_width = 480,
+	minimum_height = 480,
+	gap_x = 60,
+	gap_y = 440,
+
+-- Graphics settings
+	draw_graph_borders = false,
+	border_width = 1,
+	stippled_borders = 0,
+
+-- Font
+	use_xft = true,
+	xftalpha = 0,
+	override_utf8_locale = true,
+	draw_borders = false,
+	draw_outline = false,
+	draw_shades = false,
+
+-- Color
+	default_color = 'EFEFEF',
+	color0 = '89ab8a',
+	color1 = 'DDDDDD',
+	color2 = 'AAAAAA',
+	color3 = '888888',
+
+-- Other
+	update_interval = 1,
+	template0 = [[${color\1}${top_mem name \2}${alignr}${top_mem mem \2}%]],
+	--top_name_verbose = false,
+	no_buffers = true,
+};
+
+conky.text = [[
+${color0}${font Noto Sans:pixelsize=32}Arbeitsspeicher ${color1}${voffset 6}${memgraph}
+${color}${voffset 0}${font Noto Sans:pixelsize=24}Auslastung:${alignr}${color}${font Noto Sans:pixelsize=24}${memperc}% | ${memmax}
+${color1}${voffset 8}${membar 20}
+${voffset 20}${font Noto Sans:pixelsize=24}Prozesse${alignr}${color}${font Noto Sans:pixelsize=24}Speicher %
+${voffset 6}${template0 1 2}
+${template0 2 3}
+${template0 3 4}
+${template0 3 5}
+]];

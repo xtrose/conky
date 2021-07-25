@@ -1,0 +1,52 @@
+conky.config = {
+
+-- Windows Settings
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 255,
+	double_buffer = true,
+	background = true,
+
+-- Position
+	alignment = 'top_right',
+	minimum_width = 480,
+	minimum_height = 480,
+	gap_x = 60,
+	gap_y = 1280,
+
+-- Graphics settings
+	draw_graph_borders = false,
+	border_width = 1,
+	stippled_borders = 0,
+
+-- Font
+	use_xft = true,
+	xftalpha = 0,
+	override_utf8_locale = true,
+	draw_borders = false,
+	draw_outline = false,
+	draw_shades = false,
+
+-- Color
+	default_color = 'EFEFEF',
+	color0 = '89ab8a',
+	color1 = 'DDDDDD',
+	color2 = 'AAAAAA',
+	color3 = '888888',
+
+-- Other
+	update_interval = 1,
+	no_buffers = true,
+};
+
+conky.text = [[
+${color0}${font Noto Sans:pixelsize=32}System
+${color}${voffset 6}${font Noto Sans:pixelsize=24}Laufzeit${alignr}${uptime_short}
+${color}${voffset 6}${font Noto Sans:pixelsize=24}Prozesse${alignr}${processes}
+${color}${voffset 6}${font Noto Sans:pixelsize=24}Laufende Prozesse${alignr}${running_processes} 
+${color}${voffset 6}${font Noto Sans:pixelsize=24}Fäden:${alignr}${running_threads} 
+${color}${voffset 6}${font Noto Sans:pixelsize=24}Verbindungen${alignr}${tcp_portmon 1 65535 count} 
+]];

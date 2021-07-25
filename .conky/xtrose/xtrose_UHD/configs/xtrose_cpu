@@ -1,0 +1,53 @@
+conky.config = {
+
+-- Windows Settings
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 255,
+	double_buffer = true,
+	background = true,
+
+-- Position
+	alignment = 'top_right',
+	minimum_width = 480, 
+    minimum_height = 1000,
+	gap_x = 60,
+	gap_y = 60,
+
+-- Graphics settings
+	draw_graph_borders = false,
+	border_width = 1,
+	stippled_borders = 0,
+
+-- Font
+	use_xft = true,
+	xftalpha = 0,
+	override_utf8_locale = true,
+	draw_borders = false,
+	draw_outline = false,
+	draw_shades = false,
+
+-- Color
+	default_color = 'EFEFEF',
+	color0 = '89ab8a',
+	color1 = 'DDDDDD',
+	color2 = 'AAAAAA',
+	color3 = '888888',
+
+-- Other
+	update_interval = 1,
+}
+
+conky.text = [[
+${color0}${font Noto Sans:pixelsize=32}Prozessor ${color1}${voffset 6}${cpugraph cpu0}
+${color}${voffset 0}${font Noto Sans:pixelsize=24}Auslastung:${alignr}${color}${font Noto Sans:pixelsize=24}${freq_g 0}Ghz ${cpu cpu0}%
+${color1}${voffset 8}${cpubar cpu0 20}
+${voffset 20}${font Noto Sans:pixelsize=24}Prozesse${alignr}${color}${font Noto Sans:pixelsize=24}cpu%   mem%   pid
+${font}${color}${voffset -6}${font Noto Sans:pixelsize=20}${top name 1} $alignr ${top cpu 1} ${top mem 1} ${top pid 1}
+${color1}${top name 2} $alignr ${top cpu 2} ${top mem 2} ${top pid 2}
+${color2}${top name 3} $alignr ${top cpu 3} ${top mem 3} ${top pid 3}
+${color3}${top name 4} $alignr ${top cpu 4} ${top mem 4} ${top pid 4}
+]]

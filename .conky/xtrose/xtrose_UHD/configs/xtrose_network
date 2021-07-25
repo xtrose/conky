@@ -1,0 +1,49 @@
+conky.config = {
+
+-- Windows Settings
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_hints = 'undecorated,sticky,below,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 255,
+	double_buffer = true,
+	background = true,
+
+-- Position
+	alignment = 'top_right',
+	minimum_width = 480,
+	minimum_height = 480,
+	gap_x = 60,
+	gap_y = 840,
+
+-- Graphics settings
+	draw_graph_borders = false,
+	border_width = 1,
+	stippled_borders = 0,
+
+-- Font
+	use_xft = true,
+	xftalpha = 0,
+	override_utf8_locale = true,
+	draw_borders = false,
+	draw_outline = false,
+	draw_shades = false,
+
+-- Color
+	default_color = 'EFEFEF',
+	color0 = '89ab8a',
+	color1 = 'DDDDDD',
+	color2 = 'AAAAAA',
+	color3 = '888888',
+
+-- Other
+	update_interval = 1,
+};
+
+conky.text = [[
+${color0}${font Noto Sans:pixelsize=32}Netzwerk ${color1}${voffset 6}${downspeedgraph wlp4s0}
+${color}${voffset 0}${font Noto Sans:pixelsize=24}Auslastung${alignr}Geschwindigkeit
+${color1}${voffset 3}Download${alignr}${downspeedf wlp4s0} KiB
+${color2}Upload${alignr}${upspeedf wlp4s0} KiB
+]];

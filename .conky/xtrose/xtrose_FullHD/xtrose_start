@@ -1,0 +1,10 @@
+#!/bin/bash
+killall conky
+conky -p 1 -c ~/.conky/xtrose/xtrose_FullHD/configs/xtrose_bg &
+conky -p 2 -c ~/.conky/xtrose/xtrose_FullHD/configs/xtrose_clock &
+conky -p 3 -c ~/.conky/xtrose/xtrose_FullHD/configs/xtrose_date &
+conky -p 4 -c ~/.conky/xtrose/xtrose_FullHD/configs/xtrose_cpu &
+conky -p 5 -c ~/.conky/xtrose/xtrose_FullHD/configs/xtrose_ram &
+conky -p 6 -c ~/.conky/xtrose/xtrose_FullHD/configs/xtrose_network &
+conky -p 7 -c ~/.conky/xtrose/xtrose_FullHD/configs/xtrose_battery 
+exit
