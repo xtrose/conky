@@ -23,7 +23,7 @@ Bauteile
 
 Voraussetzung
 
-- conky-all muss installiert sein
+conky-all muss installiert sein
 $ sudo apt-get install conky-all
 
 

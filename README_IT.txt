@@ -6,7 +6,7 @@ Mail: media.studio@xtrose.com
 
 
 Costruisci la tua barra laterale Conky con xtrose Conky.
-XTrose Conky è in grado di gestire più risoluzioni di visualizzazione ed è facile da installare.
+xtrose Conky è in grado di gestire più risoluzioni di visualizzazione ed è facile da installare.
 La barra laterale è composta da diversi Conky ed è facile da espandere.
 
 
@@ -21,14 +21,14 @@ Componenti
 
 
 
-Requisiti
+Preparazione
 
-- conky-all deve essere installato
+conky-all deve essere installato
 $ sudo apt-get install conky-all
 
 
 
-installazione
+Installazione
 
 Scarica o clona Xtrose Conky da GitHub:
 $ git clone https://github.com/xtrose/conky.git

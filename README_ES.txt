@@ -17,12 +17,12 @@ Dispositivos
 - Batería
 - Sistema
 
-prerrequisito
+Preparación
 
-- conky-all debe estar instalado
+conky-all debe estar instalado
 $ sudo apt-get instalar conky-all
 
-instalación
+Instalación
 
 Descargue o clone xtrose Conky desde GitHub:
 $ git clone https://github.com/xtrose/conky.git

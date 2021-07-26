@@ -9,7 +9,7 @@ Build your own Conky Sidebar with xtrose Conky.
 xtrose Conky can handle multiple display resolutions and is easy to install.
 The sidebar is built by several conkys and is easy to expand.
 
-devices
+Components
 - Date / Time
 - Processor
 - Memory
@@ -17,12 +17,12 @@ devices
 - Battery
 - System
 
-prerequisite
+Preparation
 
-- conky-all must be installed
+conky-all must be installed
 $ sudo apt-get install conky-all
 
-installation
+Installation
 
 Download or Clone xtrose Conky from GitHub:
 $ git clone https://github.com/xtrose/conky.git

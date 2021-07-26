@@ -21,14 +21,14 @@ Composants
 
 
 
-exigence
+Préparation
 
-- conky-all doit être installé
+conky-all doit être installé
 $ sudo apt-get install conky-all
 
 
 
-installation
+Installation
 
 Téléchargez ou clonez XTrose Conky depuis GitHub :
 $ git clone https://github.com/xtrose/conky.git
